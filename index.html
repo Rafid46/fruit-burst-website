@@ -64,12 +64,26 @@
 						</label>
 						<ul
 							tabindex="0"
-							class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+							class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-[250px]"
 						>
 							<li><a>home</a></li>
 							<li><a>About us</a></li>
 							<li><a>Blog</a></li>
 							<li><a>Shop</a></li>
+							<div class="relative">
+								<form>
+									<input
+										type="text"
+										placeholder="Search here"
+										class="input pr-16 rounded-full w-[200px]"
+									/>
+									<button
+										class="btn hover:bg-white border-0 bg-white absolute top-0 right-0 rounded-full lg:right-[20px] w-8"
+									>
+										<i class="bx bx-search-alt-2 text-2xl"></i>
+									</button>
+								</form>
+							</div>
 						</ul>
 					</div>
 					<div class="navbar-center hidden lg:flex">
@@ -87,17 +101,17 @@
 					<img src="./images/logo.png" class="w-[40px]" alt="" />
 				</div>
 				<!-- searchbar -->
-				<div class="relative">
+				<div class="relative invisible md:visible lg:visible">
 					<form>
 						<input
 							type="text"
 							placeholder="Search here"
-							class="input pr-16 rounded-full"
+							class="input pr-16 rounded-full bg-white"
 						/>
 						<button
-							class="btn hover:bg-white border-0 bg-white absolute top-0 right-0 rounded-full"
+							class="border-0 bg-white absolute top-[8px] right-[20px] rounded-full"
 						>
-							<i class="bx bx-search-alt-2 text-2xl"></i>
+							<i class="bx bx-search text-2xl" style="color: #151515"></i>
 						</button>
 					</form>
 				</div>
